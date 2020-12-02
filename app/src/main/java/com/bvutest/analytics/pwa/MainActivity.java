@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setWebView((WebView) this.findViewById(R.id.webView));
 
-        testEvent();
+//        testEvent();
     }
 
     private void setDisplay(Activity activity) {
@@ -146,19 +146,19 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
-    private void testEvent() {
-        // Report score by using SUBMITSCORE Event
-        // Initiate Parameters
-        Bundle bundle = new Bundle();
-        bundle.putString("TEST_BUNDLE_KEY", "TEST_BUNDLE_VALUE");
-
-        // Report a preddefined Event
-        instance.onEvent("TEST_ONEVENT", bundle);
-
-        Bundle bundle2 = new Bundle();
-        bundle2.putLong(SCORE, 123456789);
-
-        // Report a preddefined Event
-        instance.onEvent(SUBMITSCORE, bundle2);
-    }
+//    private void testEvent() {
+//        // Report score by using SUBMITSCORE Event
+//        // Initiate Parameters
+//        Bundle bundle = new Bundle();
+//        bundle.putString("TEST_BUNDLE_KEY", "TEST_BUNDLE_VALUE");
+//
+//        // Report a preddefined Event
+//        instance.onEvent("TEST_ONEVENT", bundle);
+//
+//        Bundle bundle2 = new Bundle();
+//        bundle2.putLong(SCORE, 123456789);
+//
+//        // Report a preddefined Event
+//        instance.onEvent(SUBMITSCORE, bundle2);
+//    }
 }
